@@ -12,6 +12,6 @@ object SuspendingFunctions {
 
   @JvmStatic
   fun main(args: Array<String>) = runBlocking {
-    simple().forEach { value -> log(value) }
+    simple().forEach(::log)
   }
 }

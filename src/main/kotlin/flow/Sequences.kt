@@ -13,6 +13,6 @@ object Sequences {
 
   @JvmStatic
   fun main(args: Array<String>) {
-    simple().forEach { value -> log(value) }
+    simple().forEach(::log)
   }
 }
