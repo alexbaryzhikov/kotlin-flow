@@ -24,7 +24,7 @@ object FlowCancellation {
         .collect()
     }.join()
 
-    println("\nNo cancellation checks by defaul")
+    println("\nNo cancellation checks by default")
     supervisorScope().launch {
       flowOf(1, 2, 3, 4, 5).onEach { log("Emitting $it") }
         .onEach { value ->
